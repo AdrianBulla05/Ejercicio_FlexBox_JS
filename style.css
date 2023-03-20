@@ -1,0 +1,293 @@
+
+/* estilos del body */
+body {
+    margin: 0;
+    padding: 48px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: linear-gradient(45deg, rgba(23, 100, 104, 0.8), rgba(116, 13, 13, 0.8)), url(../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    
+/* aquí comienzan los estilos de la barra de navegación */
+
+nav{
+    background: linear-gradient(30deg, rgba(158, 184, 145, 0.3), rgba(153, 189, 202, 0.352));
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    padding: 30px;
+    color: white;
+}
+
+nav ul{
+    float: right;
+    padding: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+li a.active, li a:hover{
+    background: white;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Estilos del Login */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    border-radius: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+
+input{
+    outline: 0;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.boton{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color:white;
+    border-radius: 15px;
+    font-weight: 400;
+    background: linear-gradient(45deg, rgba(76, 102, 104, 0.8), rgba(118, 72, 72, 0.8));
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.boton:hover{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 20px;
+    color:white;
+    border-radius: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, rgba(63, 126, 131, 0.8), rgba(133, 59, 59, 0.8));
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transform: translatey(-2%);
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(45deg, rgba(23, 100, 104, 0.8), rgba(116, 13, 13, 0.8));
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+/* estilos sección adicional */
+.seccion{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 65px 1px 65px;
+}
+
+.descripcion{
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+.totoro{
+    border-radius: 150px;
+    box-shadow:  rgba(255, 255, 255,0.2) 0px 10px 36px 0px,
+    rgb(255, 255, 255, 0.06) 0px 0px 0px 1px;
+}
+
+/* estilos de los Article - cards */
+
+.informacion{
+    margin: 50px auto;
+    text-align: center;
+    margin: 100px;
+}
+
+.informacion .titulo{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.informacion .subtitulo{
+    font-size: 20px;
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.elementos{
+    display: flex;
+    flex-direction: row;
+}
+
+.separador{
+    margin: 100px auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 15px;
+}
+
+.img_card{
+    transform: scale(var(--img-scale));
+    border-radius: 15px;
+}
+
+.card{
+    width: 300px;
+    padding: 50px 10px;
+    text-align: center;
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: box-shadow .5s;
+    margin: 10px;
+    border-radius: 15px;
+    line-height: 25px;
+}
+
+.card:hover{
+    --img-scale: 1.1;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 10px 36px 0px,
+        rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
+    color: rgb(75, 124, 155);
+    transform: translatey(-2%);
+}
+
+
+/* responsive - TABLET */
+@media (max-width: 960px){
+
+    *{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 65px 1px 65px;
+    }
+
+    .totoro{
+        border-radius: 150px;
+        box-shadow:  rgba(255, 255, 255,0.2) 0px 10px 36px 0px,
+        rgb(255, 255, 255, 0.06) 0px 0px 0px 1px;
+        width: auto;
+    }
+    body {
+        margin: 0;
+        padding: 48px 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        background-image: linear-gradient(45deg, rgba(23, 100, 104, 0.8), rgba(116, 13, 13, 0.8)), url(../assets/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: 850px){
+    
+
+    .seccion{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 65px 1px 65px;
+    }
+
+    .totoro{
+        border-radius: 150px;
+        box-shadow:  rgba(255, 255, 255,0.2) 0px 10px 36px 0px,
+        rgb(255, 255, 255, 0.06) 0px 0px 0px 1px;
+        width: auto;
+    }
+    body {
+        margin: 0;
+        padding: 48px 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        background-image: linear-gradient(45deg, rgba(23, 100, 104, 0.8), rgba(116, 13, 13, 0.8)), url(../assets/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
